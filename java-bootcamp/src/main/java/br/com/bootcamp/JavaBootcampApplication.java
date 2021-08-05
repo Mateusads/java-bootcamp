@@ -1,13 +1,13 @@
-package br.com.projeto.usuario.api;
+package br.com.bootcamp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ApiUsuarioApplication {
+public class JavaBootcampApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ApiUsuarioApplication.class, args);
+		SpringApplication.run(JavaBootcampApplication.class, args);
 	}
 
 }
