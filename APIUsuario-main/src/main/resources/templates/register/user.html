@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Management System</title>
+
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+          crossorigin="anonymous">
+</head>
+<body>
+<div class="container my-2">
+    <h1>User Management System</h1>
+    <hr>
+    <h2>Register/Edit User</h2>
+    </br>
+    <form action="#" th:action="@{register/user/save}" th:object="${user}" method="POST">
+        <h4>Name</h4>
+        <input type="text" th:field="*{name}" class="form-control mb-4 col-4">
+        <h4>Age</h4>
+        <input type="text" th:field="*{age}" class="form-control mb-4 col-4">
+        <h4>Email</h4>
+        <input type="text" th:field="*{email}" class="form-control mb-4 col-4">
+        <button type="submit" class="btn btn-info col-2">Save</button>
+    </form>
+    </hr>
+    <a th:href="@{/}">Return for User List</a>
+</div>
+</body>
+</html>
